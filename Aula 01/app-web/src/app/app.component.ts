@@ -8,7 +8,7 @@ const COMPONENTS = [HeaderComponent, FooterComponent]
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ...COMPONENTS],
+  imports: [RouterOutlet, ...COMPONENTS, ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
