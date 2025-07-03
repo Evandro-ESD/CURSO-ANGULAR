@@ -1,0 +1,21 @@
+.navbar{
+    background-color: #1e88e5;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    height: 50px;
+}
+
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbar a:active{
+    cursor: progress;
+    position: relative;
+    bottom: -2px;
+}
