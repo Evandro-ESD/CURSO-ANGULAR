@@ -1,0 +1,15 @@
+<div class="box">
+    <h2>Calculadora IMC</h2>
+    <!-- input vai add na variável peso -->
+    <label for="">Peso (Kg)</label>
+    <input type="number" name="peso" [(ngModel)]="peso">
+    <!-- input vai add na variável altura -->
+    <label for="">Altura </label>
+    <input type="number" name="altura" [(ngModel)]="altura">
+
+    @if(resultado){
+        <p>IMC: {{resultado}}</p>
+    }
+    
+    <button (click)="calcular()">Calcular IMC</button>
+</div>
