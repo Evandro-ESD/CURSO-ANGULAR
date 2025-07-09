@@ -22,6 +22,8 @@ export class ImcComponent {
 
   calcular(){
     this.resultado = this.serviceImcService.calcularImc(this.peso, this.altura)
+    this.peso = 0
+    this.altura = 0
   }
 
 }

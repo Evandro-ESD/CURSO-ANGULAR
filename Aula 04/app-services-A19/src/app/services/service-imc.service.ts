@@ -8,6 +8,6 @@ export class ServiceImcService {
   constructor() { }
 
   calcularImc(peso:number, altura:number){
-    return peso * altura
+    return peso / (altura ** 2)
   }
 }
