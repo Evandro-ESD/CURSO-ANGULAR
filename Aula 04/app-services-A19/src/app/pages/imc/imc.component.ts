@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { ServiceImcService } from '../../services/service-imc.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ButtonComponent } from "../../components/button/button.component";
 
 
 
 @Component({
   selector: 'app-imc',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, ButtonComponent],
   templateUrl: './imc.component.html',
   styleUrl: './imc.component.css'
 })

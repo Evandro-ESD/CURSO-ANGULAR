@@ -1,5 +1,14 @@
-<div class="conatiner">
-    <input type="number">
-    <button > </button>
-    <div id="resultado"></div>
+<div class="box">
+    <h1>Calculadora Quadrado</h1>
+    <!-- input vai add na variável peso -->
+    <label for="">Número: </label>
+    <input type="number" name="n" [(ngModel)]="n">
+    
+    @if(resultado){
+        <p>Quadrado: {{resultado | number: '1.2-2'}}</p>
+    }
+    @if(n){
+        <button  (click)="calcular()" >Calcular Quadrado</button>
+    }
+    <app-button (clique)="calcular()" text="Calcular"></app-button>
 </div>
