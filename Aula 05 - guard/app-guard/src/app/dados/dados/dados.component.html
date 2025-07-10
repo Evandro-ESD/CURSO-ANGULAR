@@ -1,0 +1,30 @@
+<h2>Dados da API</h2>
+@if(dados && dados.length > 0){
+    <p>{{dados[0].name | json}}</p>
+}
+<div class="container">
+    <table mat-table [dataSource]="dados" class="mat-elevation-z8">
+
+        <!-- arrayDeColunas: string[] = ['id', 'name', 'email']; -->
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> ID </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <!-- NOME Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Nome </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <!-- EMAIL Column -->
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef> Email </th>
+            <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="arrayDeColunas"></tr>
+        <tr mat-row *matRowDef="let row; columns: arrayDeColunas;"></tr>
+    </table>
+</div>

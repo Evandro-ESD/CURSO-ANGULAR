@@ -5,10 +5,13 @@ import {MatInputModule} from '@angular/material/input';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { Component } from '@angular/core';
+import { DadosComponent } from "../../dados/dados/dados.component";
+
+
 
 @Component({
   selector: 'app-login',
-  imports: [MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule],
+  imports: [MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule, DadosComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

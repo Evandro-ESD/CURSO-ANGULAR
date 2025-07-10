@@ -1,0 +1,49 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #bae0ff; /* azul muito claro */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mat-header-row {
+  background-color: #1565c0; /* azul escuro */
+  color: white;
+  font-weight: bold;
+  height: 56px;
+}
+
+.mat-header-cell {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.mat-row {
+  background-color: #e3f2fd; /* azul claro */
+  transition: background-color 0.3s;
+}
+
+.mat-row:hover {
+  background-color: #bbdefb; /* azul mais escuro no hover */
+}
+
+.mat-cell {
+  padding: 12px;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+h2, p {
+  text-align: center;
+  color: #1565c0;
+  margin-top: 30px;
+  font-weight: 600;
+}
