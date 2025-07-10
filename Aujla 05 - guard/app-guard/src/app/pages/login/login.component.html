@@ -1,1 +1,10 @@
-<p>login works!</p>
+<div class="login-container">
+    <h2>Login</h2>
+    <input name="usuario" [(ngModel)]="usuario" placeholder="Usuário" />
+    <input name="senha" [(ngModel)]="senha" placeholder="Senha" type="password" />
+    <button (click)="entrar()">Entrar</button>
+    @if(erro){
+    <p style="color:red">Login inválido</p>
+    <br>
+    }
+</div>
