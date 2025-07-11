@@ -1,2 +1,9 @@
 <h2>Bem-vindo à área protegida!</h2>
 
+@for(i of opcoes; track i){
+<div class="cards" style="border: 1px solid orange; width: 100px;">
+    <p>{{i.title}}</p>
+    <button (click)="chamarRotas(i.rota)"> {{i.title}}</button>
+</div>
+
+}

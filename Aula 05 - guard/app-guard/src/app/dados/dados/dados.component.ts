@@ -26,7 +26,7 @@ export class DadosComponent implements OnInit {
   }
 
   getDados() {
-    this.service.getDados()
+    
   }
 
   mostrarDados() { }

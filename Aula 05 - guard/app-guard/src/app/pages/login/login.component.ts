@@ -6,12 +6,13 @@ import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { DadosComponent } from "../../dados/dados/dados.component";
+import { DadosComServiceComponent } from "../../dados/dados-com-service/dados-com-service.component";
 
 
 
 @Component({
   selector: 'app-login',
-  imports: [MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule, DadosComponent],
+  imports: [MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule, DadosComponent, DadosComServiceComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
