@@ -1,0 +1,10 @@
+<div class="conatiner-home">
+    <div id="title">
+        <h1>Situação de Aprendizagem – Desenvolvimento Web com Angular 19 </h1>
+    </div>
+    @for(card of cards; track card.title){
+    <div id="botoes-chamada">
+        <button (click)="chamarRota(card.rota)">{{card.title}}</button>
+    </div>
+    }
+</div>

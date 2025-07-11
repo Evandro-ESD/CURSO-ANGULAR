@@ -1,0 +1,20 @@
+<div class="container">
+    <div id="title">
+        <h1>Calculo Quadrado</h1>
+        <div id="entrada">
+            <div class="mostra-resultado">
+                <label for="number">Base: </label>
+                <input [(ngModel)]="base" type="number" id="base"> <span>m²</span>
+            </div>
+            <div class="mostra-resultado">
+                <label for="number">Altura:</label>
+                <input [(ngModel)]="altura" type="number" id="altura"><span> m²</span>
+            </div>
+
+            <button (click)="calculo()">Calcular</button>
+        </div>
+        <div id="resultado">
+            <p>Área calculada: {{resultado}} m²</p>
+        </div>
+    </div>
+</div>

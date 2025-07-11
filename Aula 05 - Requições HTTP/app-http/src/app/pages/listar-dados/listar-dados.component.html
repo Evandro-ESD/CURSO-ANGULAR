@@ -1,0 +1,32 @@
+<div class="container">
+    <div >
+        <h1>Requisição HTTP </h1>
+    </div>
+    <table>
+        <thead>
+            <th>
+                <tr>
+                    <td>TITLE</td>
+                    <td>BODY</td>
+                </tr>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+               @for(element of dados; track element.title){
+                <tr>
+                    <td>Titulo: {{element.title}}</td>
+                    <td>Body: {{element.body}}</td>
+                </tr>
+               }
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    &copy;“ Evandro dos Santos - Atividade 30PTS - ANGULAR 19
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
