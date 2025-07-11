@@ -14,7 +14,8 @@ constructor(public router:Router){}
 
   cards = [
     {rota: 'quadrado', title: 'Calculo Quadrado'},
-    {rota: 'requisicao', title: 'Requisição HTTP'}
+    {rota: 'requisicao', title: 'Requisição HTTP'},
+    {rota: 'quadrado-formbuilder', title: 'Quadrado-formbuilder'},
   ]
 
 chamarRota(rota:string){
