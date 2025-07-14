@@ -1,0 +1,67 @@
+/* Estilização geral do header */
+header {
+  background-color: #333; /* Cor de fundo escura */
+  color: white; /* Cor do texto */
+  padding: 20px 10px 0px 10px; /* Espaçamento interno */
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+  width: 100%;
+
+}
+
+/* Estilização do div com id titulo */
+div#titulo {
+  text-align: center; /* Centraliza o conteúdo */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilização do h1 */
+h1 {
+  margin: 0; /* Remove margens padrão */
+  font-size: 2.5em; /* Tamanho da fonte */
+  color: #f8f8f8; /* Cor do texto mais clara */
+}
+
+/* Estilização do div com classe menu */
+div.menu {
+  padding: 10px 0; /* Espaçamento interno */
+}
+
+/* Estilização da nav */
+nav {
+  display: flex; /* Layout flexível */
+  justify-content: flex-end; /* Centraliza os itens */
+  gap: 20px; /* Espaço entre os links */
+}
+
+/* Estilização dos links */
+a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  padding: 5px 15px; /* Espaçamento interno */
+  border-radius: 4px; /* Bordas arredondadas */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+/* Efeito hover nos links */
+a:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização para links ativos (opcional) */
+a:active {
+  background-color: #666;
+}
+
+@media (max-width: 734px) {
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    h1{
+        display: none;
+    }
+}

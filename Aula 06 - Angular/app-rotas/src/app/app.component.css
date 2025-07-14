@@ -1,0 +1,18 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza horizontalmente */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    min-height: 100vh; /* ocupa altura total da tela */
+}
+
+app-header {
+    display: block;
+    margin-bottom: 20px;
+}
+
+router-outlet {
+    display: block;
+}

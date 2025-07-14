@@ -15,7 +15,6 @@ export class MostrarDadosComponent{
 
   meuForm:any;
 
-  
 
   constructor(public quadrado:QuadradoService,
     public form:FormBuilder
