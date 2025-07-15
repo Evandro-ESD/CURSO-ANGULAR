@@ -1,0 +1,9 @@
+<div class="content">
+    @for(card of cards; track card){
+    <div class="card">
+        <img [src]="card.imagem">
+        <h4>{{card.titulo}}</h4>
+        <p>{{card.descritivo}}</p>
+    </div>
+    }
+</div>

@@ -12,16 +12,14 @@ import { MatIcon, MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 MatIconModule
 
-
-
 @Component({
   selector: 'app-model',
-  imports: [MatIcon , MatDialogActions, MatButtonModule],
+  imports: [MatIcon , MatButtonModule],
   templateUrl: './model.component.html',
   styleUrl: './model.component.css'
 })
-export class ModelComponent {
-  constructor(public dialogRef: MatDialogRef<ModelComponent>) { }
+export class ModalComponent {
+  constructor(public dialogRef: MatDialogRef<ModalComponent>) { }
 
   fecharSemNada(){
     this.dialogRef.close()

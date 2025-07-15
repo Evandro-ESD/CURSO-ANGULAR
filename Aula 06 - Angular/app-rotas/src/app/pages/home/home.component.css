@@ -1,0 +1,11 @@
+.content-body {
+    display: flex;
+    justify-content: center;
+    height: 50dvh;
+    overflow: scroll;
+}
+
+.botoes-para-externos {
+    display: flex;
+    justify-content: end;
+}

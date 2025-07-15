@@ -1,0 +1,14 @@
+<div class="container">
+    <caption>
+        Tela de login:
+    </caption>
+    <form [formGroup]="meuForm">
+        <div class="login">
+            <label >LOGIN</label>
+            <input formControlName="user" name="user" type="text" placeholder="login">
+            <label >SENHA</label>
+            <input formControlName="pass" name="pass" type="text" placeholder="senha">
+            <button (click)="logar()" id="logar" >LOGAR</button>
+        </div>
+    </form>
+</div>
