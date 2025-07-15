@@ -14,13 +14,13 @@
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    height: 300px;
     width: 300px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    height: 300px;
     overflow: hidden;
     padding: 5px;
-    margin: 10px;
+    margin: 5px 10px;
 }
 
 .card:hover {
@@ -47,4 +47,10 @@
     color: #666;
     font-size: 0.95rem;
     margin: 0 16px 16px;
+    white-space: nowrap;
+    /* Impede que o texto quebre linha */
+    overflow: hidden;
+    /* Esconde o que ultrapassar o container */
+    text-overflow: ellipsis;
+    /* Adiciona as reticências */
 }

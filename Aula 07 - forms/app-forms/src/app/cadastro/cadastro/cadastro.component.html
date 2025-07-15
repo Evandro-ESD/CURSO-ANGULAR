@@ -1,0 +1,23 @@
+<div class="container-forms">
+    <form [formGroup]="cadastro" (ngSubmit)="enviar()">
+        <label for="">Nome</label>
+        <input type="text" id="nome" formControlName="nome">
+        @if(cadastro.get('nome')?.invalid && cadastro.get('nome')?.touched){
+            <p>*Obrigatório</p>
+        }
+        <label for="">Email</label>
+        <input type="email" formControlName="email">
+
+        <label for="">Senha</label>
+        <input type="password" formControlName="senha">
+
+        <label for="">Data de Nascimento</label>
+        <input type="date" formControlName="nascimento">
+
+        <label for="">Telefone</label>
+        <input type="tel" formControlName="telefone">
+
+        <button type="submit">Cadastro</button>
+    </form>
+    <button (click)="pesquisa()">eeeee</button>
+</div>
