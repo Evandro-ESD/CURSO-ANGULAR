@@ -8,9 +8,9 @@
     min-height: 100vh; /* ocupa altura total da tela */
 }
 
-app-header {
+app-header, app-footer {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
 }
 
 router-outlet {
