@@ -1,7 +1,7 @@
 .content-body {
     display: flex;
     justify-content: center;
-    height: 65dvh;
+    height: 75dvh;
     overflow: scroll;
     box-shadow: 0px -1px 10px #ccc;
     border-radius: 10px;

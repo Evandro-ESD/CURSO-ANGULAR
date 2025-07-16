@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sobre',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './sobre.component.html',
   styleUrl: './sobre.component.css'
 })
-export class SobreComponent {
+export class SobreComponent implements OnInit{
 
   slideAtual:number = 0
 
@@ -15,6 +15,10 @@ export class SobreComponent {
     {src: "/instiucional/fundo.png" , alt: "", descricao: "Foto da loja Arena Chess Store, especializada em artigos de xadrez."},
     {src: "/instiucional/julia.png" , alt: "", descricao: "A Grande Mestre dará uma palestra exclusiva na loja."},
   ]
+
+  ngOnInit(): void {
+    setInterval
+  }
 
   proxima(){
     this.slideAtual = (this.slideAtual + 1) % this.slides.length
