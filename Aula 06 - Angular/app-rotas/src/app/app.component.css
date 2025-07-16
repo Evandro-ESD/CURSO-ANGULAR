@@ -1,18 +1,27 @@
 .container {
-    max-width: 1200px;
-    margin: 0 auto; /* centraliza horizontalmente */
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    min-height: 100vh; /* ocupa altura total da tela */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-app-header, app-footer {
-    display: block;
-    margin-bottom: 3px;
+app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 router-outlet {
-    display: block;
+  display: block;
+  padding-top: 80px;  /* espaço para o header fixo */
+  padding-bottom: 60px; /* espaço para o footer fixo */
+  /* flex: 1; */
+}
+
+app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

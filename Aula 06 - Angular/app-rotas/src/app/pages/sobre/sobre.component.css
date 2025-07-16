@@ -1,0 +1,119 @@
+.container-sobre {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Lista de atividades */
+#atividades ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Carrossel */
+.carrossel {
+  position: relative;
+  text-align: center;
+}
+
+.carrossel img {
+  width: 100%;
+  height: 300px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.carrossel p {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.descricao-slide {
+  max-width: 100%;
+  white-space: nowrap;       /* Impede quebra de linha */
+  overflow: hidden;          /* Esconde o texto que ultrapassar */
+  text-overflow: ellipsis;   /* Adiciona as reticências */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.descricao-slide:hover {
+  white-space: normal;       /* Permite múltiplas linhas */
+  overflow: visible;         /* Mostra o texto completo */
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+/* Botões do carrossel */
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button.prev:hover, button.next:hover {
+  background-color: rgba(0,0,0,0.7);
+  transform: translateY(-50%) scale(1.1);
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+/* Contato */
+#contato p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .carrossel img {
+    max-height: 250px;
+  }
+  
+  button.prev, button.next {
+    font-size: 18px;
+    padding: 8px;
+  }
+}

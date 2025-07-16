@@ -8,10 +8,10 @@ import { controleGuard } from './guards/controle.guard';
 import { LoginComponent } from './components/login/login.component';
 
 export const routes: Routes = [
-    {path: '', component: HomeComponent, title: 'Home'},
-    {path: 'sobre', component: SobreComponent, title: 'Sobre'},
-    {path: 'servicos', component: ServicosComponent, title: 'Serviços'},
-    {path: 'contatos', component: ContatoComponent, title: 'Contatos'},
-    {path: 'painelcontrole', component: PainelComponent, title: 'Painel de Controle', canActivate: [controleGuard]},
-    {path: 'login', component: LoginComponent, title: 'areaadministrativa',},
+    {path: '', component: HomeComponent,},
+    {path: 'sobre', component: SobreComponent, data:  {title: 'Sobre'}},
+    {path: 'servicos', component: ServicosComponent, data: {title: 'Serviços'}},
+    {path: 'contatos', component: ContatoComponent,  data: {title: 'Contatos'}},
+    {path: 'painelcontrole', component: PainelComponent,  data: {title: 'Painel de Controle'}, canActivate: [controleGuard]},
+    {path: 'login', component: LoginComponent, data: {title: 'Área de funcionários'},},
 ];

@@ -1,7 +1,35 @@
-<div class="carrossel-sobre">
-    <div class="carroossel-slides">
-        <img [src]="" alt="">
-    </div>
-    <button class="next">⏪</button>
-    <button class="next">⏩</button>
+<div class="container-sobre">
+    <section id="sobre">
+        <h2>Sobre a Empresa</h2>
+        <p>Somos apaixonados por xadrez! Vendemos artigos exclusivos para o jogo, organizamos campeonatos periódicos e
+            promovemos encontros com mestres nacionais para elevar seu nível de jogo.</p>
+    </section>
+
+    <section id="atividades">
+        <h2>Nossas Atividades</h2>
+        <ul>
+            <li>Venda de artigos de jogo de xadrez: tabuleiros, peças, relógios e acessórios.</li>
+            <li>Organização de campeonatos regionais e nacionais com premiações.</li>
+            <li>Visitas de grandes mestres e campeões nacionais para workshops e simultâneas.</li>
+        </ul>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria de Fotos</h2>
+
+        <!-- Carrossel Simples -->
+        <div class="carrossel">
+            <img [src]="slides[slideAtual].src" alt="">
+            <p class="descricao-slide">{{slides[slideAtual].descricao}}</p>
+            <button (click)="proxima()" class="prev">&#10094;</button>
+            <button (click)="anterior()" class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: contatoimperiodoxadrez.com</p>
+        <p>Telefone: (21) 99999-9999</p>
+        <p>Endereço: Rua do Xadrez, 123 - Rio de Janeiro</p>
+    </section>
 </div>

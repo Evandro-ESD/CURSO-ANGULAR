@@ -6,6 +6,7 @@ header {
   font-family: Arial, sans-serif; /* Fonte padrão */
   box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.4);
   width: 100%;
+  text-align: center;
 }
 
 /* Estilização do div com id titulo */

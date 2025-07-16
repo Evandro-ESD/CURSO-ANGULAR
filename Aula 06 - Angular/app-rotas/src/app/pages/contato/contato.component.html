@@ -1,1 +1,17 @@
-<p>contato works!</p>
+<div class="conteiner-contato">
+    <div class="titulo">
+        <h1>Para quaisquer dúvidas, sugestões entre em contato com nossa equipe. Sua opinião é muito importante!</h1>
+    </div>
+    <form [formGroup]="formContato" (ngSubmit)="enviarForm()">
+        <label>Nome</label>
+        <input type="text" id="nome" name="nome" formControlName="nome">
+        
+        <label>Email</label>
+        <input type="email" id="email" name="email">
+        
+        <label>Menssagem</label>
+        <textarea name="menssagem" id="menssagem" rows="5"></textarea>
+
+        <button type="button">Enviar</button>
+    </form>
+</div>
