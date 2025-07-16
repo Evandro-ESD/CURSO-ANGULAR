@@ -9,18 +9,25 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './contato.component.css'
 })
 export class ContatoComponent {
-  formContato:FormGroup
+  formContato: FormGroup
 
-  constructor(private fb:FormBuilder){
+  constructor(private fb: FormBuilder) {
     this.formContato = this.fb.group({
-      nome:[],
-      email:[],
-      menssagem:[]
+      nome: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      mensagem: ['', [Validators.required, Validators.minLength(10)]]
     })
   }
 
-  enviarForm(){
-    console.log(this.formContato)
+  enviarForm() {
+    if(this.formContato.valid){
+      console.log("Formulário: ", this.formContato.value)
+      this.formContato.reset()
+    }else 
+      {
+        alert(`Preencha todos os campos`)
+        console.log("Erro: ....")}
+        
   }
 
 }

@@ -19,7 +19,7 @@ export class CardsComponent implements OnInit {
   getPrudutos() {
     this.produtos.cards.forEach((card) => {
       this.cards.push(card)
-      console.log("Lista Cards:", card)
+      // console.log("Lista Cards:", card)
     });
   }
 

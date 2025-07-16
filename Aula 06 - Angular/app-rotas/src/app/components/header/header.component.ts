@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter, map, mergeMap } from 'rxjs/operators';
@@ -11,6 +11,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
 })
 export class HeaderComponent {
 
+  readonly nomeFicyicio = input<string>('Arena Chess Store');
 
   pageTitle: string = '';
 
@@ -27,7 +28,7 @@ export class HeaderComponent {
       filter(route => route.outlet === 'primary'),
       mergeMap(route => route.data)
     ).subscribe(data => {
-      this.pageTitle = data['title'] || 'Angular 19 com Componentes e Rota';
+      this.pageTitle = data['title'] || 'Angular 19 com Componentes e Rotas\n' + this.nomeFicyicio();
     });
   }
 }
